@@ -1,6 +1,6 @@
 var pos = 0;
 var actions = [];
-var debug = false;
+var debug = true;
 
 var console_log = function () {};
 if (typeof console != "undefined" && typeof console.log != 'undefined') {
