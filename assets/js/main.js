@@ -1,6 +1,7 @@
 var pos = 0;
 var actions = [];
 var debug = true;
+var rootUrl = window.location.origin + "/hisense-apps"
 
 var console_log = function () {};
 if (typeof console != "undefined" && typeof console.log != 'undefined') {
@@ -47,7 +48,7 @@ function makeList(appStore) {
 }
 
 function addTile(data, appStore) {
-    var img = data.icon || window.location.origin + '/assets/icons/' + data.appid + '.png?1';
+    var img = data.icon || rootUrl + '/assets/icons/' + data.appid + '.png?1';
     var cnt = $('#container');
     var tile = $('#empty_tile').clone();
     tile.find('.icon img').attr('src', img);
