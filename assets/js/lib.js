@@ -1,12 +1,12 @@
 function AppStore() {
     this._objH = null;
 
-    if (typeof Hisense != 'undefined') {
-        console.log('Hisense Object found.');
-        this._objH = Hisense;
-    } else if (typeof HiBrowser != 'undefined') {
+    if (typeof HiBrowser != 'undefined') {
         console.log('HiBrowser Object found.');
         this._objH = HiBrowser;
+    } else if (typeof Hisense != 'undefined') {
+        console.log('Hisense Object found.');
+        this._objH = Hisense;
     } else {
         console.log('No Hisense Object found.');
     }
