@@ -105,6 +105,7 @@ function markInstalled(appStore) {
 function bindKeys() {
     $('body').keydown(function(event) {
         var key = event.which;
+        console.log("pressed "+key)
         if (key == 38) {
             event.preventDefault();
             up();
